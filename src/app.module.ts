@@ -19,6 +19,7 @@ import { Trs_Orc_Entity } from './shared/entities/respuestas.entity';
 
 @Module({
   imports: [
+    SolicitudesModule,
     AuthModule,
     HttpModule,
     ConfigModule.forRoot(),
@@ -53,10 +54,10 @@ import { Trs_Orc_Entity } from './shared/entities/respuestas.entity';
           },
         },
       }),
-    })//,SolicitudesModule
+    })
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
 
+export class AppModule {}

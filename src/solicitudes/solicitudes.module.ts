@@ -6,7 +6,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Usuarios } from '../shared/entities/usuario.entity';
 import { Equipos } from '../shared/entities/equipo.entity';
 import { Empleados, Unidades } from 'src/shared/entities';
-import { JwtModule } from '@nestjs/jwt';
 import { AuthModule } from 'src/auth/auth.module';
 import { Dominios } from '../shared/entities/dominio.entity';
 import { Trs_Prg_Entity } from 'src/shared/entities/preguntas.entity';

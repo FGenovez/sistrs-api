@@ -8,7 +8,7 @@ import { Equipos } from 'src/shared/entities/equipo.entity';
 import { Solicitudes } from 'src/shared/entities/solicitud.entity';
 import { Usuarios } from 'src/shared/entities/usuario.entity';
 import { Repository } from 'typeorm';
-import { MailerService } from 'nodemailer';
+import { MailerService } from '@nestjs-modules/mailer';
 import { Empleados } from 'src/shared/entities/empleado.entity';
 import { Unidades } from '../shared/entities/unidad.entity';
 import { Dominios } from 'src/shared/entities/dominio.entity';
@@ -21,8 +21,6 @@ import { AuthService } from 'src/auth/auth.service';
 
 @Injectable()
 export class SolicitudesService {
- 
-    
     constructor(
         @InjectRepository(Solicitudes) private solicitudesRepository: Repository<Solicitudes>,
         @InjectRepository(Usuarios) private usuariosRepository: Repository<Usuarios>,

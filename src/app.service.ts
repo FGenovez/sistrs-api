@@ -12,7 +12,7 @@ export class AppService {
   ) {}
 
   getHello(): string {
-    return '¡Backend del sistema de Transporte CEL!';
+    return '¡Backend del sistema de Transporte CEL - 2023!';
   }
 
   /**

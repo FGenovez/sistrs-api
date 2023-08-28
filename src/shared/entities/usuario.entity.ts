@@ -1,6 +1,4 @@
 import { Column, Entity,  Index,  PrimaryColumn } from 'typeorm';
-import { Type } from "class-transformer";
-
 @Index("TRA_UVS_PK", ["uvsCodcia","uvsCodigo"], { unique: true })
 @Entity('TRA_UVS_USR_VALIDASOL')
 export class Usuarios {

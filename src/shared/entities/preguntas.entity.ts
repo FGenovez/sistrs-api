@@ -1,4 +1,3 @@
-import { Type } from 'class-transformer';
 import { Column, Entity,  Index,  OneToMany,  PrimaryColumn } from 'typeorm';
 import { Trs_Orc_Entity } from './respuestas.entity';
 
